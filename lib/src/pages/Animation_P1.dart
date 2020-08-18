@@ -6,7 +6,7 @@ class AnimationP1 extends StatelessWidget {
     return SafeArea(
           child: Scaffold(
         appBar: AppBar(
-          title: Text('Animate a page route transition'),
+          title: Text('\nAnimate a page route transition'),
         ),
         body:Container(
           child: Column(

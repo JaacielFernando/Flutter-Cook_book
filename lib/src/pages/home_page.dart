@@ -5,8 +5,24 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        drawer: Drawer(
+          child: ListView(padding: EdgeInsets.zero, children: <Widget>[
+            DrawerHeader(
+              child: Text('Drawer Header'),
+              decoration: BoxDecoration(color: Colors.blue,),
+            ),
+            ListTile(
+              title: Text('Item 1'),
+              onTap: ()=> Navigator.pushNamed(context, '/AnimationP1'),
+            ),
+            ListTile(
+              title: Text('Item 1'),
+              onTap: () {},
+            ),
+          ]),
+        ),
         appBar: AppBar(
-          title: Text('Home Screen'),
+          title: Text('\nHome Screen'),
         ),
         body: Container(
           child: Column(
