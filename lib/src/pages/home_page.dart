@@ -99,6 +99,30 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  InkWell(
+                    child: Text(
+                      'Form Validation Example              ',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 18,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/FormValidationE');
+                    },
+                  ),
+                  RaisedButton(
+                    child: Text('Launch '),
+                    onPressed: () {
+                      // Navigate to the second screen using a named route.
+                      Navigator.pushNamed(context, '/FormValidationE');
+                    },
+                  ),
+                ],
+              ),
             ],
           ),
         ),
