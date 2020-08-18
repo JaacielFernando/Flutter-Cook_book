@@ -39,6 +39,7 @@ class MyCustomFormState extends State<MyCustomForm> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           TextFormField(
+            autofocus: true,
             validator: (value) {
               if (value.isEmpty) {
                 return 'Please enter some text';
