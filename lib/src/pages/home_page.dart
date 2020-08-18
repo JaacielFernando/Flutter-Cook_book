@@ -51,6 +51,30 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  InkWell(
+                    child: Text(
+                      'Snack Bar Example                        ',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 18,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/SnackBarExample');
+                    },
+                  ),
+                  RaisedButton(
+                    child: Text('Launch '),
+                    onPressed: () {
+                      // Navigate to the second screen using a named route.
+                      Navigator.pushNamed(context, '/SnackBarExample');
+                    },
+                  ),
+                ],
+              ),
             ],
           ),
         ),
